@@ -1,7 +1,7 @@
 import preprocess from 'svelte-preprocess';
-import path, { dirname } from 'path'
+import { dirname } from 'path'
 import { fileURLToPath } from 'url'
-// import adapter from '@sveltejs/adapter-node'
+import netlify from  '@sveltejs/adapter-netlify';
 
 const filePath = dirname(fileURLToPath(import.meta.url));
 const sassPath = `${filePath}/src/style`
@@ -18,7 +18,8 @@ const config = {
 
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		target: '#svelte',
+		adapter: netlify(),
 	}
 };
 

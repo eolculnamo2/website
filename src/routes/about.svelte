@@ -1,3 +1,7 @@
+<script context="module" lang="ts">
+	export const prerender = true;
+</script>
+
 <script lang="ts">
 	import StandardPage from '$lib/layout/StandardPage/StandardPage.svelte';
 </script>
@@ -39,13 +43,13 @@
 	<hr />
 	<div>
 		<ul>
-			<li><img src="js.png" alt="JS" /></li>
-			<li><img src="ts.png" alt="TS" /></li>
-			<li><img src="rescript.png" alt="ReScript" /></li>
-			<li><img src="html.png" alt="HTML" /></li>
-			<li><img src="css.png" alt="CSS" /></li>
-			<li><img src="quarkus.png" alt="Quarkus" /></li>
-			<li><img src="sb-logo.png" alt="Spring Boot" /></li>
+			<li><img src="/js.png" alt="JS" /></li>
+			<li><img src="/ts.png" alt="TS" /></li>
+			<li><img src="/rescript.png" alt="ReScript" /></li>
+			<li><img src="/html.png" alt="HTML" /></li>
+			<li><img src="/css.png" alt="CSS" /></li>
+			<li><img src="/quarkus.png" alt="Quarkus" /></li>
+			<li><img src="/sb-logo.png" alt="Spring Boot" /></li>
 		</ul>
 	</div>
 </StandardPage>

@@ -14,7 +14,7 @@
 	<h1>Welcome!</h1>
 	<div class="inner-content">
 		<p class="personal-overview">It doesn't feel like work if you love what you do</p>
-		<img src="pwa.svg" alt="Welcome" />
+		<img src="/pwa.svg" alt="Welcome" />
 	</div>
 </StandardPage>
 

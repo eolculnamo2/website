@@ -2,7 +2,7 @@ import preprocess from 'svelte-preprocess';
 import { dirname } from 'path'
 import { fileURLToPath } from 'url'
 // import adapter from  '@sveltejs/adapter-netlify';
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-static'; // static may cause issues someday...
 
 const filePath = dirname(fileURLToPath(import.meta.url));
 const sassPath = `${filePath}/src/style`

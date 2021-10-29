@@ -11,24 +11,18 @@
 </svelte:head>
 
 <StandardPage>
-	<main>
-		<h1>Welcome!</h1>
-		<div class="inner-content">
-			<p class="personal-overview">It doesn't feel like work if you love what you do</p>
-			<img src="pwa.svg" alt="Welcome" />
-		</div>
-	</main>
+	<h1>Welcome!</h1>
+	<div class="inner-content">
+		<p class="personal-overview">It doesn't feel like work if you love what you do</p>
+		<img src="pwa.svg" alt="Welcome" />
+	</div>
 </StandardPage>
 
 <style>
 	h1 {
 		font-weight: bold;
 	}
-	main {
-		padding: 1rem;
-		background-color: white;
-		min-height: 90vh;
-	}
+
 	.personal-overview {
 		max-width: 400px;
 		margin: auto;

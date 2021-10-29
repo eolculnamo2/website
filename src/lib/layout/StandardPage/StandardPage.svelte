@@ -5,5 +5,15 @@
 
 <Header />
 <Content>
-	<slot />
+	<main>
+		<slot />
+	</main>
 </Content>
+
+<style>
+	main {
+		padding: 1rem;
+		background-color: white;
+		min-height: 90vh;
+	}
+</style>

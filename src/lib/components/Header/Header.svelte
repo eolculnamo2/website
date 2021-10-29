@@ -19,7 +19,7 @@
 
 <header>
 	<Content split>
-		<h1>Rob Bertram</h1>
+		<a href="/" class="logo"><h1>Rob Bertram</h1></a>
 		<nav>
 			{#each routesArray as r}
 				{#if r.href !== $currentRoute}
@@ -46,6 +46,10 @@
 		color: white;
 		font-weight: 400;
 		margin: 0;
+	}
+	.logo {
+		cursor: pointer;
+		text-decoration: none;
 	}
 	.link {
 		color: white;

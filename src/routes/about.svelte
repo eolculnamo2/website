@@ -56,7 +56,8 @@
 
 <style lang="scss">
 	.me-img {
-		max-width: 400px;
+		width: 400px;
+		max-width: 100%;
 		margin: 1em auto;
 		border-radius: 50%;
 		border: 2px solid #dadada;

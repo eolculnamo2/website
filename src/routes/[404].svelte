@@ -4,7 +4,7 @@
 
 <StandardPage>
 	<h1>Sorry! This page doesn't exist!</h1>
-	<img src="404.svg" alt="Welcome" />
+	<img src="/404.svg" alt="Welcome" />
 </StandardPage>
 
 <style>

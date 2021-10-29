@@ -13,7 +13,7 @@
 <StandardPage>
 	<h1>About me</h1>
 	<div class="flex">
-		<img class="me-img" src="me.png" alt="Rob Bertram" />
+		<img class="me-img" src="/me.png" alt="Rob Bertram" />
 		<div>
 			<p>
 				I'm a software engineer and love what I do. I've mainly worked on the front end, but love

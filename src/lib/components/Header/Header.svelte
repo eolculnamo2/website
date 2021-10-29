@@ -23,7 +23,7 @@
 		<nav>
 			{#each routesArray as r}
 				{#if r.href !== $currentRoute}
-					<a href={r.href}><div class="link">{r.name}</div></a>
+					<a sveltekit:prefetch href={r.href}><div class="link">{r.name}</div></a>
 				{/if}
 			{/each}
 		</nav>

@@ -59,8 +59,6 @@
 	<h1>Blog</h1>
 	<p>A place for my musings</p>
 	{#each posts as post}
-		{#if !!post.slug}
-			<BlogBox name={post.name} slug={post.slug} mediumLink={post.mediumLink} />
-		{/if}
+		<BlogBox name={post.name} slug={post.slug} mediumLink={post.mediumLink} />
 	{/each}
 </StandardPage>

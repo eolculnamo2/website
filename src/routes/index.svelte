@@ -9,7 +9,9 @@
 <StandardPage title="Rob Bertram">
   <h1>Welcome!</h1>
   <div class="inner-content">
-    <p class="personal-overview">It doesn't feel like work if you love what you do</p>
+    <p class="personal-overview">
+      A language that doesn't affect the way you think about programming is not worth knowing.
+    </p>
     <img src="/pwa.svg" alt="Welcome" />
   </div>
 </StandardPage>

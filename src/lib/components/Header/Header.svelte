@@ -1,6 +1,7 @@
 <script>
   import Content from '$lib/layout/Content/Content.svelte';
   import { currentRoute } from '../../../store/navigation';
+  import Hambuger from '../Hamburger/Hambuger.svelte';
   const routesArray = [
     {
       href: '/',
@@ -24,7 +25,20 @@
 <header>
   <Content split>
     <a href="/" class="logo"><h1>Rob Bertram</h1></a>
-    <nav>
+    <div class="mobile">
+      <Hambuger>
+        <div class="black-text">
+          {#each routesArray as r}
+            <a sveltekit:prefetch href={r.href}
+              ><h3 class={`link ${r.href === $currentRoute ? 'link--selected' : ''}`}>
+                {r.name}
+              </h3></a
+            >
+          {/each}
+        </div>
+      </Hambuger>
+    </div>
+    <nav class="not-mobile">
       {#each routesArray as r}
         <a sveltekit:prefetch href={r.href}
           ><div class={`link ${r.href === $currentRoute ? 'link--selected' : ''}`}>{r.name}</div></a
@@ -35,6 +49,18 @@
 </header>
 
 <style lang="scss">
+  .mobile {
+    display: block;
+    @media (min-width: 500px) {
+      display: none;
+    }
+  }
+  .not-mobile {
+    display: none;
+    @media (min-width: 500px) {
+      display: flex;
+    }
+  }
   header {
     padding: 1rem 0.5rem;
     background-color: #0892d0;
@@ -56,8 +82,11 @@
     text-decoration: none;
   }
   .link {
-    color: white;
+    color: #555;
+    text-align: right;
     cursor: pointer;
+    font-weight: normal;
+    text-decoration: none;
 
     &:hover {
       text-decoration: underline;
@@ -66,6 +95,11 @@
     &--selected {
       text-decoration: underline;
       font-weight: bold;
+    }
+
+    @media (min-width: 500px) {
+      color: white;
+      text-align: left;
     }
   }
 </style>

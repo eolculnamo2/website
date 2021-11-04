@@ -70,8 +70,9 @@
   }
 
   .drawer {
+    display: flex;
     width: 320px;
-    position: absolute;
+    position: fixed;
     top: 60px;
     right: -325px;
     height: 100vh;

@@ -27,7 +27,7 @@
     <a href="/" class="logo"><h1>Rob Bertram</h1></a>
     <div class="mobile">
       <Hambuger>
-        <div class="black-text">
+        <div class="mobile-options">
           {#each routesArray as r}
             <a sveltekit:prefetch href={r.href}
               ><h3 class={`link ${r.href === $currentRoute ? 'link--selected' : ''}`}>
@@ -60,6 +60,9 @@
     @media (min-width: 500px) {
       display: flex;
     }
+  }
+  .mobile-options {
+    width: 100%;
   }
   header {
     padding: 1rem 0.5rem;

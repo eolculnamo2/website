@@ -2,6 +2,16 @@
   let open = false;
   let menuRef: HTMLElement | null = null;
   let drawerRef: HTMLElement | null = null;
+
+  $: {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+      window.scrollTo(0, 0);
+    } else {
+      document.body.style.overflow = 'initial';
+    }
+  }
+
   function clickOff(clickedEl) {
     if (!menuRef || !drawerRef) {
       open = false;
@@ -59,7 +69,7 @@
 
   .drawer {
     width: 320px;
-    position: fixed;
+    position: absolute;
     top: 60px;
     right: -325px;
     height: 100vh;

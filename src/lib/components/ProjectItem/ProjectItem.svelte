@@ -32,6 +32,7 @@
   ul {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
   }
 </style>

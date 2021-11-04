@@ -53,7 +53,6 @@
 
 <StandardPage title="Blog">
   <h1>Blog</h1>
-  <p>A place for my musings</p>
   {#each posts as post}
     <BlogBox name={post.name} slug={post.slug} mediumLink={post.mediumLink} />
   {/each}

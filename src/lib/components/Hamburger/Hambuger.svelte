@@ -4,11 +4,13 @@
   let drawerRef: HTMLElement | null = null;
 
   $: {
-    if (open) {
-      document.body.style.overflow = 'hidden';
-      window.scrollTo(0, 0);
-    } else {
-      document.body.style.overflow = 'initial';
+    if (typeof document !== 'undefined' && typeof window !== 'undefined') {
+      if (open) {
+        document.body.style.overflow = 'hidden';
+        window.scrollTo(0, 0);
+      } else {
+        document.body.style.overflow = 'initial';
+      }
     }
   }
 

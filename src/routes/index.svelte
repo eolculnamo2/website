@@ -4,6 +4,7 @@
 
 <script lang="ts">
   import StandardPage from '$lib/layout/StandardPage/StandardPage.svelte';
+  import Pwa from '$lib/svgs/Pwa.svelte';
 </script>
 
 <StandardPage title="Rob Bertram">
@@ -12,7 +13,7 @@
     <p class="personal-overview">
       A language that doesn't affect the way you think about programming is not worth knowing.
     </p>
-    <img src="/pwa.svg" alt="Welcome" />
+    <Pwa />
   </div>
 </StandardPage>
 
@@ -24,16 +25,13 @@
   .personal-overview {
     max-width: 400px;
     margin: auto;
-    text-align: center;
     margin-bottom: 3rem;
+    text-align: center;
     font-style: italic;
   }
   .inner-content {
     max-width: 900px;
     margin: auto;
     display: block;
-  }
-  img {
-    max-width: 100%;
   }
 </style>

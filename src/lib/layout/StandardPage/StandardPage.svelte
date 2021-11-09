@@ -19,7 +19,8 @@
 <style>
   main {
     padding: 1rem;
-    background-color: white;
+    background-color: var(--pure-mode-color);
     min-height: 90vh;
+    color: var(--text-color);
   }
 </style>

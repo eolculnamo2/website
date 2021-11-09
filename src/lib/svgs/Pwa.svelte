@@ -18,7 +18,6 @@
     height="654.54324"
     viewBox="0 0 1139.17088 654.54324"
     class={showFill ? 'show-fill' : 'hide-fill'}
-    stroke="#333"
     stroke-width="1"
     ><title>progressive_app</title><circle
       cx="246.82682"
@@ -174,5 +173,6 @@
     height: 100%;
     max-width: 100%;
     transition: fill 2s ease;
+    stroke: var(--text-color);
   }
 </style>

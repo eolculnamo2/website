@@ -53,7 +53,7 @@
   .line {
     height: 2px;
     width: 20px;
-    background-color: white;
+    background-color: var(--pure-mode-color);
     transition: all 0.2s;
   }
 
@@ -76,7 +76,7 @@
     top: 60px;
     right: -325px;
     height: 100vh;
-    background-color: white;
+    background-color: var(--pure-mode-color);
     border-left: 1px solid #dadada;
     transition: all 0.2s;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);

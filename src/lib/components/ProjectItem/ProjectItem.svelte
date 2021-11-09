@@ -27,7 +27,7 @@
 
 <style lang="scss">
   h3 {
-    color: #0892d0;
+    color: var(--theme-primary-color);
   }
   ul {
     list-style-type: none;

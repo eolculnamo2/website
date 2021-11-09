@@ -66,7 +66,10 @@
   }
   header {
     padding: 1rem 0.5rem;
-    background-color: #0892d0;
+    background-color: var(--theme-primary-color);
+    @media (min-width: 500px) {
+      padding: 1rem 3rem;
+    }
   }
   nav {
     display: flex;
@@ -76,7 +79,7 @@
   }
   h1 {
     font-size: 1.5rem;
-    color: white;
+    color: var(--pure-mode-color);
     font-weight: 400;
     margin: 0;
   }
@@ -85,7 +88,7 @@
     text-decoration: none;
   }
   .link {
-    color: #555;
+    color: var(--text-color);
     text-align: right;
     cursor: pointer;
     font-weight: normal;
@@ -101,7 +104,7 @@
     }
 
     @media (min-width: 500px) {
-      color: white;
+      color: var(--pure-mode-color);
       text-align: left;
     }
   }

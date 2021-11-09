@@ -39,13 +39,33 @@
   <hr />
   <div>
     <ul>
-      <li><img src="/js.png" alt="JS" /></li>
-      <li><img src="/ts.png" alt="TS" /></li>
-      <li><img src="/rescript.png" alt="ReScript" /></li>
-      <li><img src="/html.png" alt="HTML" /></li>
-      <li><img src="/css.png" alt="CSS" /></li>
-      <li><img src="/quarkus.png" alt="Quarkus" /></li>
-      <li><img src="/sb-logo.png" alt="Spring Boot" /></li>
+      <li>
+        <a href="https://www.javascript.com/" target="_blank"><img src="/js.png" alt="JS" /></a>
+      </li>
+      <li>
+        <a href="https://www.typescriptlang.org/" target="_blank"><img src="/ts.png" alt="TS" /></a>
+      </li>
+      <li>
+        <a href="https://rescript-lang.org/" target="_blank"
+          ><img src="/rescript.png" alt="ReScript" /></a
+        >
+      </li>
+      <li>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+          target="_blank"><img src="/html.png" alt="HTML" /></a
+        >
+      </li>
+      <li>
+        <a href="https://css-tricks.com/" target="_blank"><img src="/css.png" alt="CSS" /></a>
+      </li>
+      <li>
+        <a href="https://quarkus.io/" target="_blank"><img src="/quarkus.png" alt="Quarkus" /></a>
+      </li>
+      <li>
+        <a href="https://spring.io/" target="_blank"><img src="/sb-logo.png" alt="Spring Boot" /></a
+        >
+      </li>
     </ul>
   </div>
 </StandardPage>

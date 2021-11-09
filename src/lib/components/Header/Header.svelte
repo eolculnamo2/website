@@ -1,7 +1,33 @@
 <script>
   import Content from '$lib/layout/Content/Content.svelte';
+  import { onMount } from 'svelte';
   import { currentRoute } from '../../../store/navigation';
+  import DarkModeToggle from '../DarkModeToggle/DarkModeToggle.svelte';
   import Hambuger from '../Hamburger/Hambuger.svelte';
+
+  let dmToggled;
+  onMount(() => {
+    const body = document.body;
+    try {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        body.classList.add('dark-mode');
+        body.classList.remove('light-mode');
+      } else {
+        body.classList.add('light-mode');
+        body.classList.remove('dark-mode');
+      }
+    } catch (e) {
+      console.warn('Failed to detect dark mode preference: ', e);
+    }
+  });
+
+  function handleDmToggle({ detail: toggled }) {
+    dmToggled = toggled;
+    const body = document.body;
+    body.classList.toggle('dark-mode', toggled);
+    body.classList.toggle('light-mode', !toggled);
+  }
+
   const routesArray = [
     {
       href: '/',
@@ -35,6 +61,9 @@
               </h3></a
             >
           {/each}
+          <div style="float:right;">
+            <DarkModeToggle on:toggle={handleDmToggle} toggled={dmToggled} />
+          </div>
         </div>
       </Hambuger>
     </div>
@@ -46,9 +75,18 @@
       {/each}
     </nav>
   </Content>
+  <div class="dm-toggle not-mobile">
+    <DarkModeToggle on:toggle={handleDmToggle} toggled={dmToggled} />
+  </div>
 </header>
 
 <style lang="scss">
+  .dm-toggle {
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 4px;
+  }
   .mobile {
     display: block;
     @media (min-width: 500px) {

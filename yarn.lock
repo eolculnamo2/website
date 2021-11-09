@@ -564,11 +564,6 @@ cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-dark-mode-toggle@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/dark-mode-toggle/-/dark-mode-toggle-0.9.0.tgz#d6d96f0a7650997baac478d8c2ecd5f5ce1e47db"
-  integrity sha512-e7ZZn/qr+AOvONce6qCkTCoRBPJR+4q29oH2cNoM+68XFU/ySeP8/2mCioqij2nMPfMwpopd6YvZyuaf4eCVjQ==
-
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
@@ -2323,6 +2318,11 @@ svelte-preprocess@^4.0.0, svelte-preprocess@^4.9.4:
     magic-string "^0.25.7"
     sorcery "^0.10.0"
     strip-indent "^3.0.0"
+
+svelte-toggle@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/svelte-toggle/-/svelte-toggle-3.1.0.tgz#bce1efb71fb96ab3921374023c95ffd3ad5cbf3d"
+  integrity sha512-2gzDDMDhM+ImDaLEZVlnlHVY1340Y368tT4Qk5IwLnCeRJ4zV3cVwliVGacoHy7iCDukcGXzKwDzG/hTTcaljg==
 
 svelte@^3.42.6:
   version "3.44.0"

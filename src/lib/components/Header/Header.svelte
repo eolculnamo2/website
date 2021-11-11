@@ -1,31 +1,16 @@
 <script>
   import Content from '$lib/layout/Content/Content.svelte';
-  import { onMount } from 'svelte';
+  import { DARK_MODE_STORAGE_NAME } from '../../../constants';
+  import { isDarkMode } from '../../../store/app';
   import { currentRoute } from '../../../store/navigation';
   import DarkModeToggle from '../DarkModeToggle/DarkModeToggle.svelte';
   import Hambuger from '../Hamburger/Hambuger.svelte';
 
-  let dmToggled;
-  onMount(() => {
-    const body = document.body;
-    try {
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        body.classList.add('dark-mode');
-        body.classList.remove('light-mode');
-      } else {
-        body.classList.add('light-mode');
-        body.classList.remove('dark-mode');
-      }
-    } catch (e) {
-      console.warn('Failed to detect dark mode preference: ', e);
-    }
-  });
-
   function handleDmToggle({ detail: toggled }) {
-    dmToggled = toggled;
-    const body = document.body;
-    body.classList.toggle('dark-mode', toggled);
-    body.classList.toggle('light-mode', !toggled);
+    isDarkMode.set(toggled);
+    const newLocalStorageDm = toggled ? '1' : '0';
+    localStorage.setItem(DARK_MODE_STORAGE_NAME, newLocalStorageDm);
+    isDarkMode.set(toggled);
   }
 
   const routesArray = [
@@ -62,7 +47,7 @@
             >
           {/each}
           <div style="float:right;">
-            <DarkModeToggle on:toggle={handleDmToggle} toggled={dmToggled} />
+            <DarkModeToggle on:toggle={handleDmToggle} toggled={$isDarkMode} />
           </div>
         </div>
       </Hambuger>
@@ -76,7 +61,7 @@
     </nav>
   </Content>
   <div class="dm-toggle not-mobile">
-    <DarkModeToggle on:toggle={handleDmToggle} toggled={dmToggled} />
+    <DarkModeToggle on:toggle={handleDmToggle} toggled={$isDarkMode} />
   </div>
 </header>
 

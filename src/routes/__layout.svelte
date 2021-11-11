@@ -51,7 +51,7 @@
 
 <style>
   div {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: var(--primary-color);
     background: linear-gradient(

@@ -4,6 +4,16 @@
 
   const posts: { name: string; slug: string; mediumLink: string }[] = [
     {
+      name: 'Core and Incidental State',
+      slug: 'core-incidental-states',
+      mediumLink: 'https://robbertram.medium.com/core-and-incidental-state-c831763c4800',
+    },
+    {
+      name: 'Growing as a software engineer',
+      slug: 'growing-as-software-engineer',
+      mediumLink: 'https://robbertram.medium.com/growing-as-a-software-engineer-4fa1bff6b89b',
+    },
+    {
       name: 'useReducer and local side effects',
       slug: 'usereducer-and-side-effects',
       mediumLink: 'https://robbertram.medium.com/usereducer-and-local-side-effects-b75337d27c5b',

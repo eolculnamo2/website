@@ -1,0 +1,22 @@
+<script lang="ts">
+  import VideoListItem from './components/VideoListItem.svelte';
+</script>
+
+<h1>YouTube Stuff</h1>
+<div class="top-wrap">
+  <VideoListItem
+    heading="ReScript Game of Life walkthrough"
+    src="https://www.youtube.com/embed/Erbbh5ETSZU"
+  />
+  <VideoListItem
+    heading="Pattern Matching TypeScript<"
+    src="https://www.youtube.com/embed/J59fZjqWLTM"
+  />
+</div>
+
+<style>
+  .top-wrap {
+    margin: auto;
+    width: auto;
+  }
+</style>

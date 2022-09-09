@@ -1,49 +1,32 @@
 <script lang="ts">
+  import VideoListItem from './components/VideoListItem.svelte';
 </script>
 
 <h1>YouTube Stuff</h1>
-<div style="margin:auto;width:auto;">
-  <h3>ReScript Game of Life walkthrough</h3>
-  <div class="iframeVideo">
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/Erbbh5ETSZU"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    />
-  </div>
-  <h3>Pattern Matching TypeScript</h3>
-  <div class="iframeVideo">
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/J59fZjqWLTM"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    />
-  </div>
+<div class="top-wrap">
+  <VideoListItem heading="ReScript Game of Life" src="https://www.youtube.com/embed/Erbbh5ETSZU" />
+  <VideoListItem
+    heading="Pattern Matching TypeScript"
+    src="https://www.youtube.com/embed/J59fZjqWLTM"
+  />
+  <VideoListItem
+    heading="Build the Option Type with TS"
+    src="https://www.youtube.com/embed/sOfOHGdZkqg"
+  />
 </div>
 
 <style>
-  h3 {
-    margin-top: 3rem;
+  .top-wrap {
+    margin: auto;
+    width: auto;
+    padding-bottom: 2rem;
   }
-  h3:first-of-type {
-    margin-top: auto
-  }
-  .iframeVideo {
-    height: 0px;
-    padding-bottom: 56.2%;
-    position: relative;
-  }
-  .iframeVideo iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  @media (min-width: 800px) {
+    .top-wrap {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 </style>

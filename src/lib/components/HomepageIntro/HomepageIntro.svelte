@@ -12,7 +12,7 @@
 </p>
 <p>
   I'm also passionate about good tools even if they're not widely adopted. I love compile to js
-  languages -- especially <a href="https://rescript-lang.org" target="_blank">ReScript!</a>
+  languages -- especially <a href="https://rescript-lang.org" target="_blank">ReScript.</a>
 </p>
 
 <p>Feel free to reach out!</p>

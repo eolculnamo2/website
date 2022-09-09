@@ -3,7 +3,10 @@
 </script>
 
 <script lang="ts">
-  import StandardPage from '$lib/layout/StandardPage/StandardPage.svelte';
+import HomepageIntro from '$lib/components/HomepageIntro/HomepageIntro.svelte';
+
+  import HomepageVideos from '$lib/components/HomepageVideos/HomepageVideos.svelte';
+import StandardPage from '$lib/layout/StandardPage/StandardPage.svelte';
   import Pwa from '$lib/svgs/Pwa.svelte';
 </script>
 
@@ -14,6 +17,10 @@
       A language that doesn't affect the way you think about programming is not worth knowing.
     </p>
     <Pwa />
+    <hr /> 
+    <HomepageIntro />
+    <hr /> 
+    <HomepageVideos />
   </div>
 </StandardPage>
 
@@ -22,6 +29,9 @@
     font-weight: bold;
   }
 
+  hr {
+    margin: 2rem 0;
+  }
   .personal-overview {
     max-width: 400px;
     margin: auto;

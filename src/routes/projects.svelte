@@ -26,7 +26,7 @@
     },
     {
       name: 'CU Well',
-      stack: ['Java', 'Quarkus', 'Vue', 'Nuxt', 'TypeScript'],
+      stack: ['Java', 'Quarkus', 'Remix', 'React', 'Redux', 'TypeScript'],
       link: 'https://cu-well.com',
       description:
         'Website for CU Well counseling. Provides dashboard for admin, supervisors, and students. Includes blogging, gathering client feedback, client submission forms, and other features',

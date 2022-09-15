@@ -16,11 +16,11 @@
 </p>
 
 <p>Feel free to reach out!</p>
-<a href="https://github.com/eolculnamo2" target="_blank">GitHub</a>
-<a href="https://www.linkedin.com/in/rob-bertram-1a2864133/" target="_blank">LinkedIn</a>
+<a class ="block-link" href="https://github.com/eolculnamo2" target="_blank">GitHub</a>
+<a class="block-lin" href="https://www.linkedin.com/in/rob-bertram-1a2864133/" target="_blank">LinkedIn</a>
 
 <style>
-  a {
+  .block-link {
     display: block;
   }
 </style>

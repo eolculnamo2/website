@@ -1,11 +1,16 @@
 <script lang="ts">
+  import { pwaImageReady } from '../../store/homepage';
+
   import { draw } from 'svelte/transition';
 
   const fillTime = 2400;
   let show = false;
   let showFill = false;
 
-  setTimeout(() => (show = true), 10);
+  setTimeout(() => {
+    show = true
+    pwaImageReady.set(true)
+  }, 10);
   setTimeout(() => (showFill = true), fillTime);
 </script>
 

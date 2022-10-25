@@ -3,10 +3,10 @@
 </script>
 
 <script lang="ts">
-import HomepageIntro from '$lib/components/HomepageIntro/HomepageIntro.svelte';
+  import HomepageIntro from '$lib/components/HomepageIntro/HomepageIntro.svelte';
 
   import HomepageVideos from '$lib/components/HomepageVideos/HomepageVideos.svelte';
-import StandardPage from '$lib/layout/StandardPage/StandardPage.svelte';
+  import StandardPage from '$lib/layout/StandardPage/StandardPage.svelte';
   import Pwa from '$lib/svgs/Pwa.svelte';
 </script>
 
@@ -17,9 +17,9 @@ import StandardPage from '$lib/layout/StandardPage/StandardPage.svelte';
       A language that doesn't affect the way you think about programming is not worth knowing.
     </p>
     <Pwa />
-    <hr /> 
+    <hr />
     <HomepageIntro />
-    <hr /> 
+    <hr />
     <HomepageVideos />
   </div>
 </StandardPage>

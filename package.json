@@ -2,7 +2,7 @@
   "name": "portfolio-site",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
+    "dev": "vite dev",
     "build": "svelte-kit build",
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
@@ -27,7 +27,8 @@
     "svelte-preprocess": "^4.9.4",
     "svelte-toggle": "^3.1.0",
     "tslib": "^2.3.1",
-    "typescript": "^4.4.3"
+    "typescript": "^4.4.3",
+    "vite": "link:@sveltejs/kit/vite"
   },
   "type": "module",
   "dependencies": {

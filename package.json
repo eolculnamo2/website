@@ -28,7 +28,7 @@
     "svelte-toggle": "^3.1.0",
     "tslib": "^2.3.1",
     "typescript": "^4.4.3",
-    "vite": "link:@sveltejs/kit/vite"
+    "vite": "^3.1.8"
   },
   "type": "module",
   "dependencies": {

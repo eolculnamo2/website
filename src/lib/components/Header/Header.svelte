@@ -6,11 +6,12 @@
   import DarkModeToggle from '../DarkModeToggle/DarkModeToggle.svelte';
   import Hambuger from '../Hamburger/Hambuger.svelte';
 
-  function handleDmToggle({ detail: toggled }) {
-    isDarkMode.set(toggled);
+  function handleOnToggle({ detail: toggled }) {
+    const theme = toggled ? 'dark' : 'light';
+    isDarkMode.set(theme);
     const newLocalStorageDm = toggled ? '1' : '0';
     localStorage.setItem(DARK_MODE_STORAGE_NAME, newLocalStorageDm);
-    isDarkMode.set(toggled);
+    isDarkMode.set(theme);
   }
 
   const routesArray = [
@@ -47,7 +48,9 @@
             >
           {/each}
           <div style="float:right;">
-            <DarkModeToggle on:toggle={handleDmToggle} toggled={$isDarkMode} />
+            {#if $isDarkMode !== 'unset'}
+              <DarkModeToggle on:toggle={handleOnToggle} toggled={$isDarkMode === 'dark'} />
+            {/if}
           </div>
         </div>
       </Hambuger>
@@ -61,7 +64,9 @@
     </nav>
   </Content>
   <div class="dm-toggle not-mobile">
-    <DarkModeToggle on:toggle={handleDmToggle} toggled={$isDarkMode} />
+    {#if $isDarkMode !== 'unset'}
+      <DarkModeToggle on:toggle={handleOnToggle} toggled={$isDarkMode === 'dark'} />
+    {/if}
   </div>
 </header>
 

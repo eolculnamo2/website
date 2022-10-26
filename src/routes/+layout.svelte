@@ -11,7 +11,7 @@
 
 <script lang="ts">
   import { currentRoute } from '../store/navigation';
-
+  import { match } from 'ts-pattern';
   import '../app.css';
   import { isDarkMode } from '../store/app';
   import { onMount } from 'svelte';
@@ -23,9 +23,9 @@
     // if not set to 1 or 0, leet deetection happen from matchMedia
     const darkModeLocalStorage = localStorage.getItem(DARK_MODE_STORAGE_NAME);
     if (darkModeLocalStorage === '1') {
-      isDarkMode.set(true);
+      isDarkMode.set('dark');
     } else if (darkModeLocalStorage === '0') {
-      isDarkMode.set(false);
+      isDarkMode.set('light');
     }
     if (darkModeLocalStorage) {
       return;
@@ -34,10 +34,10 @@
     try {
       if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         localStorage.setItem(DARK_MODE_STORAGE_NAME, '1');
-        isDarkMode.set(true);
+        isDarkMode.set('dark');
       } else {
         if (!localStorage.getItem(DARK_MODE_STORAGE_NAME)) {
-          isDarkMode.set(false);
+          isDarkMode.set('light');
         }
       }
     } catch (e) {
@@ -46,7 +46,13 @@
   });
 </script>
 
-<div class={$isDarkMode ? 'dark-mode' : 'light-mode'}>
+<div
+  class={match($isDarkMode)
+    .with('dark', () => 'dark-mode')
+    .with('light', () => 'light-mode')
+    .with('unset', () => '')
+    .exhaustive()}
+>
   <slot />
 </div>
 

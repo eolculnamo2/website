@@ -15,6 +15,16 @@ body {
   --font-mono: 'Fira Mono', monospace;
   --theme-primary-color: #0892d0;
   --content-width: 1080px;
+  --pure-mode-color: #ffffff;
+  --primary-color: #b9c6d2;
+  --secondary-color: #d0dde9;
+  --tertiary-color: #edf0f8;
+  --accent-color: #ff3e00;
+  --heading-color: rgba(0, 0, 0, 0.7);
+  --text-color: #444444;
+  --background-without-opacity: rgba(255, 255, 255, 0.7);
+  --column-width: 42rem;
+  --column-margin-top: 4rem;
 }
 
 .light-mode {
@@ -41,6 +51,21 @@ body {
   --background-without-opacity: rgba(255, 255, 255, 0.7);
   --column-width: 42rem;
   --column-margin-top: 4rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --pure-mode-color: #222;
+    --primary-color: #111;
+    --secondary-color: #222;
+    --tertiary-color: #444;
+    --accent-color: #ff3e00;
+    --heading-color: #dadada;
+    --text-color: #dadada;
+    --background-without-opacity: rgba(255, 255, 255, 0.7);
+    --column-width: 42rem;
+    --column-margin-top: 4rem;
+  }
 }
 
 body {

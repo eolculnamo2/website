@@ -1,3 +1,4 @@
 import { writable } from 'svelte/store';
 
-export const isDarkMode = writable(false);
+type Theme = 'light' | 'dark' | 'unset'
+export const isDarkMode = writable<Theme>('unset');

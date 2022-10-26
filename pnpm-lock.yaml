@@ -17,12 +17,14 @@ specifiers:
   svelte-check: ^2.2.6
   svelte-preprocess: ^4.9.4
   svelte-toggle: ^3.1.0
+  ts-pattern: ^4.0.5
   tslib: ^2.3.1
   typescript: ^4.4.3
   vite: ^3.1.8
 
 dependencies:
   '@fontsource/fira-mono': 4.5.10
+  ts-pattern: 4.0.5
 
 devDependencies:
   '@sveltejs/adapter-cloudflare': 1.0.0-next.39
@@ -2711,6 +2713,10 @@ packages:
     dependencies:
       glob: 7.2.3
     dev: true
+
+  /ts-pattern/4.0.5:
+    resolution: {integrity: sha512-Bq44KCEt7JVaNLa148mBCJkcQf4l7jtLEBDuDdeuLynWDA+1a60P4D0rMkqSM9mOKLQbIWUddE9h3XKyKwBeqA==}
+    dev: false
 
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}

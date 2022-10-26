@@ -9,14 +9,11 @@
 <StandardPage title="About Me">
   <h1>About me</h1>
   <div class="flex">
-    <div style="width:100%;height:0; padding-top:50%;position:relative;">
       <img
-        style="position:absolute; top:0; left:0; width:100%;"
         class="me-img"
         src="/me.png"
         alt="Rob Bertram"
       />
-    </div>
     <div>
       <p>
         I'm a software engineer and love what I do. I've mainly worked on the front end, but love
@@ -90,11 +87,18 @@
 
 <style lang="scss">
   .me-img {
-    width: 400px;
+    min-width: 250px;
+    width: 250px;
     max-width: 100%;
     margin: 1em auto;
     border-radius: 50%;
     border: 2px solid #dadada;
+    aspect-ratio: 1/1;
+
+    @media(min-width: 400px) {
+      min-width: 400px;
+      width: 400px;
+    }
 
     @media (min-width: 950px) {
       margin: 1em;

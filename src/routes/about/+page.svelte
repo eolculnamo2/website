@@ -9,7 +9,14 @@
 <StandardPage title="About Me">
   <h1>About me</h1>
   <div class="flex">
-    <img class="me-img" src="/me.png" alt="Rob Bertram" />
+    <div style="width:100%;height:0; padding-top:50%;position:relative;">
+      <img
+        style="position:absolute; top:0; left:0; width:100%;"
+        class="me-img"
+        src="/me.png"
+        alt="Rob Bertram"
+      />
+    </div>
     <div>
       <p>
         I'm a software engineer and love what I do. I've mainly worked on the front end, but love
@@ -25,6 +32,7 @@
         I've always intended to create a personal site and I'm finally doing one that I hope turns
         out okay. This site itself is one of my many side projects and I've built it using Svelte
         Kit (which is amazing... check out <a
+          rel="noreferrer"
           href="https://www.youtube.com/watch?v=860d8usGC0o"
           target="_blank">Rich Harris' talk</a
         > about some of the value it provides!)
@@ -40,30 +48,40 @@
   <div>
     <ul>
       <li>
-        <a href="https://www.javascript.com/" target="_blank"><img src="/js.png" alt="JS" /></a>
+        <a rel="noreferrer" href="https://www.javascript.com/" target="_blank"
+          ><img src="/js.png" alt="JS" /></a
+        >
       </li>
       <li>
-        <a href="https://www.typescriptlang.org/" target="_blank"><img src="/ts.png" alt="TS" /></a>
+        <a rel="noreferrer" href="https://www.typescriptlang.org/" target="_blank"
+          ><img src="/ts.png" alt="TS" /></a
+        >
       </li>
       <li>
-        <a href="https://rescript-lang.org/" target="_blank"
+        <a rel="noreferrer" href="https://rescript-lang.org/" target="_blank"
           ><img src="/rescript.png" alt="ReScript" /></a
         >
       </li>
       <li>
         <a
+          rel="noreferrer"
           href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
           target="_blank"><img src="/html.png" alt="HTML" /></a
         >
       </li>
       <li>
-        <a href="https://css-tricks.com/" target="_blank"><img src="/css.png" alt="CSS" /></a>
+        <a rel="noreferrer" href="https://css-tricks.com/" target="_blank"
+          ><img src="/css.png" alt="CSS" /></a
+        >
       </li>
       <li>
-        <a href="https://quarkus.io/" target="_blank"><img src="/quarkus.png" alt="Quarkus" /></a>
+        <a rel="noreferrer" href="https://quarkus.io/" target="_blank"
+          ><img src="/quarkus.png" alt="Quarkus" /></a
+        >
       </li>
       <li>
-        <a href="https://spring.io/" target="_blank"><img src="/sb-logo.png" alt="Spring Boot" /></a
+        <a rel="noreferrer" href="https://spring.io/" target="_blank"
+          ><img src="/sb-logo.png" alt="Spring Boot" /></a
         >
       </li>
     </ul>

@@ -2,8 +2,8 @@ import preprocess from 'svelte-preprocess';
 import { dirname } from 'path'
 import { fileURLToPath } from 'url'
 // import adapter from  '@sveltejs/adapter-netlify';
-import adapter from '@sveltejs/adapter-static'; // static may cause issues someday...
 
+import adapter from '@sveltejs/adapter-cloudflare'; // static may cause issues someday...
 const filePath = dirname(fileURLToPath(import.meta.url));
 
 /** @type {import('@sveltejs/kit').Config} */

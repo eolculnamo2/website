@@ -44,12 +44,13 @@
   {/each}
 </StandardPage>
 
-<style>
+<style lang="scss">
   img {
     width: 400px;
     max-width: 100%;
     margin: auto;
     margin-bottom: 2em;
     display: block;
+    aspect-ratio: 400/283;
   }
 </style>

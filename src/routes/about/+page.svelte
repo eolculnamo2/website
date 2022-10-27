@@ -95,7 +95,7 @@
     border: 2px solid #dadada;
     aspect-ratio: 1/1;
 
-    @media(min-width: 400px) {
+    @media(min-width: 430px) {
       min-width: 400px;
       width: 400px;
     }

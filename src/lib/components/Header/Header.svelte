@@ -41,7 +41,7 @@
       <Hambuger>
         <div class="mobile-options">
           {#each routesArray as r}
-            <a sveltekit:prefetch href={r.href}
+            <a data-sveltekit-prefetch href={r.href}
               ><h3 class={`link ${r.href === $currentRoute ? 'link--selected' : ''}`}>
                 {r.name}
               </h3></a
@@ -57,7 +57,7 @@
     </div>
     <nav class="not-mobile">
       {#each routesArray as r}
-        <a sveltekit:prefetch href={r.href}
+        <a data-sveltekit-prefetch href={r.href}
           ><div class={`link ${r.href === $currentRoute ? 'link--selected' : ''}`}>{r.name}</div></a
         >
       {/each}

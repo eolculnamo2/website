@@ -20,10 +20,8 @@
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry.intersectionRatio);
         if ($pwaImageReady && entry.intersectionRatio > 0) {
           showVideos = true
-          console.log('in viewport');
         }
       });
     }, options);

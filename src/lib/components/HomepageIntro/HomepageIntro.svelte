@@ -1,14 +1,12 @@
-<p>
-  Hi!, I'm Rob. I like to tinker with code. Welcome to my ugly website. I do a lot of things, but
-  ui design is not one of them!
-</p>
+<p>Hi!, I'm Rob. I like to tinker with code.</p>
 <p>
   I aspire to be an excellent software engineer. Excellent software engineers are excellent at
   system design, take on hard projects, and learn fast to adapt to the best tools for any job.
 </p>
 <p>
-  My strengths are on the front end, but I enjoy doing back end work when given then chance. The
-  entire stack is interesting to me and I'd like to believe that I can be good at both someday.
+  While most of my professional experience is on the front end, I aspire to work well across the
+  stack. I actively seek opportunities at work to stretch myself whenever opportunities present
+  themselves.
 </p>
 <p>
   I'm also passionate about good tools even if they're not widely adopted. I love compile to js
@@ -16,8 +14,10 @@
 </p>
 
 <p>Feel free to reach out!</p>
-<a class ="block-link" href="https://github.com/eolculnamo2" target="_blank">GitHub</a>
-<a class="block-lin" href="https://www.linkedin.com/in/rob-bertram-1a2864133/" target="_blank">LinkedIn</a>
+<a class="block-link" href="https://github.com/eolculnamo2" target="_blank">GitHub</a>
+<a class="block-lin" href="https://www.linkedin.com/in/rob-bertram-1a2864133/" target="_blank"
+  >LinkedIn</a
+>
 
 <style>
   .block-link {

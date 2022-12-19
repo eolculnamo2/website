@@ -1,14 +1,16 @@
 <script lang="ts">
   import StandardPage from '../StandardPage/StandardPage.svelte';
   export let title: string;
-  export let mediumLink: string;
+  export let mediumLink: string | null = null;
 </script>
 
 <StandardPage {title}>
   <article class="content">
     <h1>{title}</h1>
     <hr />
-    <a href={mediumLink} target="_blank"> View on Medium </a>
+    {#if mediumLink != null}
+      <a href={mediumLink} target="_blank"> View on Medium </a>
+    {/if}
     <slot />
   </article>
 </StandardPage>

@@ -13,7 +13,7 @@
     {
       name: 'Supervision Hour Tracker',
       stack: ['Java', 'Spring Boot', 'Quarkus', 'TypeScript', 'Svelte', 'Elm'],
-      link: 'https://supervision-hour-tracker.com',
+      link: 'https://app.supervision-hour-tracker.com',
       description:
         'Tracks supervision hours for students. Provides dashboard for supervisors and administrators to review submissions.',
     },

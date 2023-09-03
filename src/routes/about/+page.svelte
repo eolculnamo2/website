@@ -21,21 +21,15 @@
         Java for our back end.
       </p>
       <p>
-        I look forward to getting off of work after a long day of code to come home and do side
-        projects ;P I've come to enjoy creating my APIs with Java and creating my front end code
-        with compile to js options such as Elm or Rescript.
+        I enjoy coding outside of work as well. I tinker with all sorts of languages for my side projects, but I've been using Rust and ReScript recently.
       </p>
       <p>
         I've always intended to create a personal site and I'm finally doing one that I hope turns
         out okay. This site itself is one of my many side projects and I've built it using Svelte
-        Kit (which is amazing... check out <a
-          rel="noreferrer"
-          href="https://www.youtube.com/watch?v=860d8usGC0o"
-          target="_blank">Rich Harris' talk</a
-        > about some of the value it provides!)
+        Kit. It's pretty bare for now, but someday I'll do more with it when I'm feeling creative.
       </p>
       <p>
-        Anyway, this is a place for me to share what I've written and to showcase what I'm working
+        This is a place for me to share what I've written and to showcase what I'm working
         on. I hope this site doesn't just become about work and code. I enjoy thinking about a lot
         of other things so you may find some of my musings about life here as well.
       </p>

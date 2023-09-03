@@ -34,16 +34,8 @@
 <div id="vid-wrap" class="top-wrap">
   {#if showVideos}
     <VideoListItem
-      heading="ReScript Game of Life"
-      src="https://www.youtube.com/embed/Erbbh5ETSZU"
-    />
-    <VideoListItem
-      heading="Pattern Matching TypeScript"
-      src="https://www.youtube.com/embed/J59fZjqWLTM"
-    />
-    <VideoListItem
-      heading="Build the Option Type with TS"
-      src="https://www.youtube.com/embed/sOfOHGdZkqg"
+      heading="ReScript Todo List"
+      src="https://www.youtube.com/embed/8t6tbhJqEjo?si=uje23IvtCbrQEGZQ"
     />
   {/if}
 </div>

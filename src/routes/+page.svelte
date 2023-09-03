@@ -5,7 +5,7 @@
 <script lang="ts">
   import HomepageIntro from '$lib/components/HomepageIntro/HomepageIntro.svelte';
 
-  import HomepageVideos from '$lib/components/HomepageVideos/HomepageVideos.svelte';
+//  import HomepageVideos from '$lib/components/HomepageVideos/HomepageVideos.svelte';
   import StandardPage from '$lib/layout/StandardPage/StandardPage.svelte';
   import Pwa from '$lib/svgs/Pwa.svelte';
 </script>
@@ -19,8 +19,8 @@
     <Pwa />
     <hr />
     <HomepageIntro />
-    <hr />
-    <HomepageVideos />
+    <!-- <hr /> -->
+    <!-- <HomepageVideos /> -->
   </div>
 </StandardPage>
 

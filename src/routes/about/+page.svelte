@@ -9,11 +9,7 @@
 <StandardPage title="About Me">
   <h1>About me</h1>
   <div class="flex">
-      <img
-        class="me-img"
-        src="/me.png"
-        alt="Rob Bertram"
-      />
+    <img class="me-img" src="/me.png" alt="Rob Bertram" />
     <div>
       <p>
         I'm a software engineer and love what I do. I've mainly worked on the front end, but love
@@ -21,7 +17,8 @@
         Java for our back end.
       </p>
       <p>
-        I enjoy coding outside of work as well. I tinker with all sorts of languages for my side projects, but I've been using Rust and ReScript recently.
+        I enjoy coding outside of work as well. I tinker with all sorts of languages for my side
+        projects, but I've been using Rust and ReScript recently.
       </p>
       <p>
         I've always intended to create a personal site and I'm finally doing one that I hope turns
@@ -29,9 +26,9 @@
         Kit. It's pretty bare for now, but someday I'll do more with it when I'm feeling creative.
       </p>
       <p>
-        This is a place for me to share what I've written and to showcase what I'm working
-        on. I hope this site doesn't just become about work and code. I enjoy thinking about a lot
-        of other things so you may find some of my musings about life here as well.
+        This is a place for me to share what I've written and to showcase what I'm working on. I
+        hope this site doesn't just become about work and code. I enjoy thinking about a lot of
+        other things so you may find some of my musings about life here as well.
       </p>
     </div>
   </div>
@@ -51,6 +48,11 @@
       <li>
         <a rel="noreferrer" href="https://rescript-lang.org/" target="_blank"
           ><img src="/rescript.png" alt="ReScript" /></a
+        >
+      </li>
+      <li>
+        <a rel="noreferrer" href="https://rust-lang.org" target="_blank"
+          ><img src="/rust-logo.jpg" alt="Rust" /></a
         >
       </li>
       <li>
@@ -89,7 +91,7 @@
     border: 2px solid #dadada;
     aspect-ratio: 1/1;
 
-    @media(min-width: 430px) {
+    @media (min-width: 430px) {
       min-width: 400px;
       width: 400px;
     }

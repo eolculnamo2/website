@@ -1,26 +1,11 @@
-<script context="module" lang="ts">
-  export const prerender = true;
-  export function load({ page }) {
-    return {
-      props: {
-        currentSlug: page.path,
-      },
-    };
-  }
-</script>
-
 <script lang="ts">
-  import { currentRoute } from '../store/navigation';
   import { match } from 'ts-pattern';
   import '../app.css';
   import { isDarkMode } from '../store/app';
   import { onMount } from 'svelte';
   import { DARK_MODE_STORAGE_NAME } from '../constants';
-  export let currentSlug: string;
-  $: currentRoute.set(currentSlug);
 
-  onMount(() => {
-    // if not set to 1 or 0, leet deetection happen from matchMedia
+  function handleDarkLightMode() {
     const darkModeLocalStorage = localStorage.getItem(DARK_MODE_STORAGE_NAME);
     if (darkModeLocalStorage === '1') {
       isDarkMode.set('dark');
@@ -43,6 +28,10 @@
     } catch (e) {
       console.warn('Failed to detect dark mode preference: ', e);
     }
+  }
+
+  onMount(() => {
+    handleDarkLightMode();
   });
 </script>
 
